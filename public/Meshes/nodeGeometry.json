@@ -1,0 +1,338 @@
+{
+  "tags": null,
+  "name": "node",
+  "comment": "",
+  "editorData": {
+    "locations": [
+      {
+        "blockId": 388,
+        "x": 100,
+        "y": 20
+      },
+      {
+        "blockId": 389,
+        "x": -160,
+        "y": 20
+      },
+      {
+        "blockId": 390,
+        "x": 160,
+        "y": -300
+      },
+      {
+        "blockId": 391,
+        "x": -120,
+        "y": -180
+      },
+      {
+        "blockId": 392,
+        "x": 520,
+        "y": -280
+      },
+      {
+        "blockId": 393,
+        "x": -120,
+        "y": -280
+      },
+      {
+        "blockId": 394,
+        "x": 800,
+        "y": -280
+      },
+      {
+        "blockId": 395,
+        "x": -20,
+        "y": -80
+      },
+      {
+        "blockId": 396,
+        "x": 280,
+        "y": 80
+      }
+    ],
+    "frames": [],
+    "x": 158.834148183082,
+    "y": 253.7890483428788,
+    "zoom": 0.7073479710000001
+  },
+  "customType": "BABYLON.NodeGeometry",
+  "outputNodeId": 394,
+  "blocks": [
+    {
+      "customType": "BABYLON.BoxBlock",
+      "id": 388,
+      "name": "Box",
+      "inputs": [
+        {
+          "name": "size",
+          "valueType": "number",
+          "value": 1,
+          "inputName": "size",
+          "targetBlockId": 389,
+          "targetConnectionName": "output"
+        },
+        {
+          "name": "width",
+          "valueType": "number",
+          "value": 0
+        },
+        {
+          "name": "height",
+          "valueType": "number",
+          "value": 0
+        },
+        {
+          "name": "depth",
+          "valueType": "number",
+          "value": 0
+        },
+        {
+          "name": "subdivisions",
+          "valueType": "number",
+          "value": 1
+        },
+        {
+          "name": "subdivisionsX",
+          "valueType": "number",
+          "value": 0
+        },
+        {
+          "name": "subdivisionsY",
+          "valueType": "number",
+          "value": 0
+        },
+        {
+          "name": "subdivisionsZ",
+          "valueType": "number",
+          "value": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "geometry"
+        }
+      ],
+      "evaluateContext": false
+    },
+    {
+      "customType": "BABYLON.GeometryInputBlock",
+      "id": 389,
+      "name": "Size",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "output"
+        }
+      ],
+      "type": 2,
+      "contextualValue": 0,
+      "min": 0,
+      "max": 0,
+      "groupInInspector": "",
+      "valueType": "number",
+      "value": 0.05
+    },
+    {
+      "customType": "BABYLON.SphereBlock",
+      "id": 390,
+      "name": "Sphere",
+      "inputs": [
+        {
+          "name": "segments",
+          "valueType": "number",
+          "value": 32,
+          "inputName": "segments",
+          "targetBlockId": 393,
+          "targetConnectionName": "output"
+        },
+        {
+          "name": "diameter",
+          "valueType": "number",
+          "value": 1,
+          "inputName": "diameter",
+          "targetBlockId": 391,
+          "targetConnectionName": "output"
+        },
+        {
+          "name": "diameterX",
+          "valueType": "number",
+          "value": 0
+        },
+        {
+          "name": "diameterY",
+          "valueType": "number",
+          "value": 0
+        },
+        {
+          "name": "diameterZ",
+          "valueType": "number",
+          "value": 0
+        },
+        {
+          "name": "arc",
+          "valueType": "number",
+          "value": 1
+        },
+        {
+          "name": "slice",
+          "valueType": "number",
+          "value": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "geometry"
+        }
+      ],
+      "evaluateContext": false
+    },
+    {
+      "customType": "BABYLON.GeometryInputBlock",
+      "id": 391,
+      "name": "Diameter",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "output"
+        }
+      ],
+      "type": 2,
+      "contextualValue": 0,
+      "min": 0,
+      "max": 0,
+      "groupInInspector": "",
+      "valueType": "number",
+      "value": 1
+    },
+    {
+      "customType": "BABYLON.InstantiateOnVerticesBlock",
+      "id": 392,
+      "name": "InstantiateVertices",
+      "inputs": [
+        {
+          "name": "geometry",
+          "inputName": "geometry",
+          "targetBlockId": 390,
+          "targetConnectionName": "geometry"
+        },
+        {
+          "name": "instance",
+          "inputName": "instance",
+          "targetBlockId": 388,
+          "targetConnectionName": "geometry"
+        },
+        {
+          "name": "density",
+          "valueType": "number",
+          "value": 1,
+          "inputName": "density",
+          "targetBlockId": 395,
+          "targetConnectionName": "output"
+        },
+        {
+          "name": "matrix"
+        },
+        {
+          "name": "rotation",
+          "valueType": "BABYLON.Vector3",
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "inputName": "rotation",
+          "targetBlockId": 396,
+          "targetConnectionName": "output"
+        },
+        {
+          "name": "scaling",
+          "valueType": "BABYLON.Vector3",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output"
+        }
+      ],
+      "removeDuplicatedPositions": true,
+      "evaluateContext": true
+    },
+    {
+      "customType": "BABYLON.GeometryInputBlock",
+      "id": 393,
+      "name": "Seg",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "output"
+        }
+      ],
+      "type": 1,
+      "contextualValue": 0,
+      "min": 0,
+      "max": 0,
+      "groupInInspector": "",
+      "valueType": "number",
+      "value": 10
+    },
+    {
+      "customType": "BABYLON.GeometryOutputBlock",
+      "id": 394,
+      "name": "Output",
+      "inputs": [
+        {
+          "name": "geometry",
+          "inputName": "geometry",
+          "targetBlockId": 392,
+          "targetConnectionName": "output"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "customType": "BABYLON.GeometryInputBlock",
+      "id": 395,
+      "name": "Float",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "output"
+        }
+      ],
+      "type": 2,
+      "contextualValue": 0,
+      "min": 0,
+      "max": 0,
+      "groupInInspector": "",
+      "valueType": "number",
+      "value": 1
+    },
+    {
+      "customType": "BABYLON.GeometryInputBlock",
+      "id": 396,
+      "name": "Vector3",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "output"
+        }
+      ],
+      "type": 8,
+      "contextualValue": 0,
+      "min": 0,
+      "max": 0,
+      "groupInInspector": "",
+      "valueType": "BABYLON.Vector3",
+      "value": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+<root>
+    <Rectangle id="firstContainer" verticalAlignment="Control.HORIZONTAL_ALIGNMENT_TOP" background="yellow" width=".8" height=".4" color="Orange">
+        <Button id="imageButton" name="imageButton" width="0.2" background="red" height="0.3">
+                <Image id="image" source="assets/Espilit/Tree.png" width="1" height="1" name="image" stretch="Image.STRETCH_FILL" horizontalAlignment="Control.HORIZONTAL_ALIGNMENT_LEFT" />
+        </Button>
+        <InputText id="inputText1" width="{{textWidth}}" maxWidth="0.3"  height="40px" color="white" verticalAlignment="Control.HORIZONTAL_ALIGNMENT_TOP"/>
+        <Button id="helloButton" width="0.2" verticalAlignment="Control.VERTICAL_ALIGNMENT_BOTTOM" height="0.2" name="helloButton" background="green" onPointerUpObservable="storeUsernameEvent" >
+            <TextBlock  text="Store Input" color = "white" />
+        </Button>
+    </Rectangle>
+</root>

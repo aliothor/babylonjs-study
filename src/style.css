@@ -1,0 +1,61 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+canvas {
+  width: 70%;
+  height: 70%;
+}
+
+#loader {
+  width: 70%;
+  height: 75%;
+  background-color: slategray;
+  position: absolute;
+  left: 15%;
+  top: 19%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#loaded {
+  width: 70%;
+  height: 75%;
+  background-color: slategray;
+  position: absolute;
+  left: 15%;
+  top: 19%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+#loadingContainer {
+  width: 40%;
+  height: 2rem;
+  background-color: white;
+  border-radius: 0.45rem;
+}
+
+#loadingBar {
+  width: 0%;
+  height: 100%;
+  background-color: green;
+  border-radius: 0.45rem;
+}
+
+.displayText {
+  color: white;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
